@@ -14,7 +14,7 @@ public struct GroceryCategoryResponseDTO: Codable {
     public let colorCode: String
     public let items: [GroceryItemResponseDTO]
     
-    public init(id: UUID, title: String, colorCode: String, items: [GroceryItemResponseDTO]) {
+    public init(id: UUID, title: String, colorCode: String, items: [GroceryItemResponseDTO] = []) {
         self.id = id
         self.title = title
         self.colorCode = colorCode
